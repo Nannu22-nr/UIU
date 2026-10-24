@@ -1,0 +1,20 @@
+
+# Python virtual environment
+venv/
+.venv/
+
+# Secrets and environment variables
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Generated files and indexes (exclude if reproducible)
+outputs/
+results/
+index/
+
+# IDE and system files
+.vscode/
+.DS_Store

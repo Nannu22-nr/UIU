@@ -1,0 +1,13 @@
+{
+  "id": "C6",
+  "type": "modified from C1 — pregnancy added as source-supported prerequisite change",
+  "modification": "Pregnancy is a listed high-risk condition in DEN-ADV-001 and is an exclusion trigger for NSAIDs in DEN-MED-002.",
+  "complaints": "High fever for 3 days, severe headache, pain behind the eyes, body ache, nausea, and a rash on the chest.",
+  "duration": "3 days",
+  "age": 27,
+  "sex": "Female",
+  "history": "Pregnant, 22 weeks gestation.",
+  "medicines": "Prenatal vitamins",
+  "allergies": "None known",
+  "extra": "Temperature 39.5 C. No bleeding. No abdominal pain. Urine output normal."
+}

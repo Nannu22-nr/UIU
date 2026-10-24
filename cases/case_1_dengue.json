@@ -1,0 +1,12 @@
+{
+  "id": "C1",
+  "type": "ordinary — Dengue",
+  "complaints": "High fever for 3 days, severe headache, pain behind the eyes, body ache, nausea, and a rash on the chest.",
+  "duration": "3 days",
+  "age": 28,
+  "sex": "Male",
+  "history": "None significant",
+  "medicines": "None",
+  "allergies": "None known",
+  "extra": "Temperature 39.5 C. No bleeding. No abdominal pain. Urine output normal."
+}
