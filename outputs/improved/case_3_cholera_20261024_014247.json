@@ -1,0 +1,84 @@
+{
+  "mode": "Improved",
+  "case": "Chief complaints: Profuse watery diarrhoea since last night (6 episodes), vomiting twice, very thirsty, feeling weak.\nDuration: 12 hours\nAge: 34; Sex: Male\nHistory: No chronic illness\nMedicines: None\nAllergies: None known\nOther: Sunken eyes, skin pinch goes back slowly, pulse rapid, able to drink eagerly. No blood in stool.\n",
+  "retrieved_cards": [
+    "CHOL-DX-001",
+    "CHOL-MED-003",
+    "CHOL-ADV-001",
+    "DEN-ADV-002",
+    "DEN-DX-001",
+    "CHIK-ADV-002"
+  ],
+  "applicability": [
+    {
+      "card_id": "CHOL-DX-001",
+      "disease": "Cholera",
+      "status": "applicable_with_gaps",
+      "notes": [
+        "missing: 'hydration assessment findings'",
+        "missing: 'outbreak status'"
+      ]
+    },
+    {
+      "card_id": "CHOL-MED-003",
+      "disease": "Cholera",
+      "status": "applicable_with_gaps",
+      "notes": [
+        "missing: 'weight'"
+      ]
+    },
+    {
+      "card_id": "CHOL-ADV-001",
+      "disease": "Cholera",
+      "status": "applicable_with_gaps",
+      "notes": [
+        "missing: 'caregiver understanding'"
+      ]
+    },
+    {
+      "card_id": "DEN-ADV-002",
+      "disease": "Dengue",
+      "status": "applicable_with_gaps",
+      "notes": [
+        "missing: 'weight (for urine output threshold)'"
+      ]
+    },
+    {
+      "card_id": "DEN-DX-001",
+      "disease": "Dengue",
+      "status": "applicable_with_gaps",
+      "notes": [
+        "missing: 'CBC result'",
+        "missing: 'tourniquet test result'"
+      ]
+    },
+    {
+      "card_id": "CHIK-ADV-002",
+      "disease": "Chikungunya",
+      "status": "applicable_with_gaps",
+      "notes": [
+        "missing: 'vital signs'",
+        "missing: 'urine output'"
+      ]
+    }
+  ],
+  "questions": [
+    "[CHOL-DX-001] Please confirm: hydration assessment findings",
+    "[CHOL-DX-001] Please confirm: outbreak status",
+    "[CHOL-MED-003] Please confirm: weight",
+    "[CHOL-ADV-001] Please confirm: caregiver understanding",
+    "[DEN-ADV-002] Please confirm: weight (for urine output threshold)",
+    "[DEN-DX-001] Please confirm: CBC result",
+    "[DEN-DX-001] Please confirm: tourniquet test result",
+    "[CHIK-ADV-002] Please confirm: vital signs",
+    "[CHIK-ADV-002] Please confirm: urine output"
+  ],
+  "output": "**1. PROBABLE DIAGNOSIS**  \n- **Probable cholera** – The patient is ≥ 2 years old and has acute profuse watery diarrhoea with vomiting, marked thirst, sunken eyes, a rapid pulse and a skin‑pinch that returns slowly. These findings satisfy the “some dehydration” criteria of the cholera case definition (≥ 2 of sunken eyes, rapid pulse, thirsty/drinks eagerly, skin‑pinch slow) and there are no danger signs (lethargy, absent/weak pulse, respiratory distress) (CHOL‑DX‑001 [p.1]).  \n\n*Note:* Outbreak status is not known (missing information), but the case meets the cholera clinical definition regardless of outbreak context.\n\n---\n\n**2. INVESTIGATIONS**  \n\n| Investigation | Purpose (per cards) | Timing / Conditions |\n|---------------|---------------------|----------------------|\n| **Weight measurement** | Required to calculate the exact volume of intravenous Ringer’s lactate for severe dehydration (30 mL/kg then 70 mL/kg) (CHOL‑MED‑003 [p.3]) | At presentation, before starting IV fluids. |\n| **Hydration assessment (dehydration severity)** | To confirm the dehydration category (Plan A/B/C) and guide fluid management (CHOL‑DX‑001 [p.1]) | Immediate clinical exam (sunken eyes, skin‑pinch, pulse, thirst, mental status). |\n| **Outbreak status check** | Determines whether the case should be managed within the cholera outbreak pathway (CHOL‑DX‑001 [p.1]) | Verify with local public‑health surveillance at presentation. |\n| **Caregiver understanding assessment** | To ensure the caregiver can follow discharge advice (CHOL‑ADV‑001 [p.10]) | Before discharge, ask caregiver to repeat key points. |\n\n*No laboratory tests (e.g., stool culture, CBC) are required by the cholera cards for the initial management.*\n\n---\n\n**3. MEDICATION PLANNING**  \n\n| Medication / Fluid | Dose & Rate (per card) | Route | Frequency / Duration | Instructions / Restrictions | Notes on Missing Information |\n|--------------------|------------------------|-------|----------------------|-----------------------------|------------------------------|\n| **Ringer’s lactate IV** (for severe dehydration) | **First bolus:** 30 mL / kg in **30 minutes**; **Second phase:** 70 mL / kg over **2.5 hours** (for patients > 12 months) | Intravenous (large cannula or two lines) | Single course until rehydration achieved | Write start time on IV bag; monitor for hypoglycaemia (watch and treat rapidly) (CHOL‑MED‑003 [p.3]) | **Weight unknown** → exact volume cannot be calculated; obtain weight before initiating. |\n| **Oral Rehydration Solution (ORS)** | Give as soon as the patient can drink safely, to replace ongoing losses | Oral | Continue until diarrhoea stops and patient is fully rehydrated | Encourage frequent small sips; continue even after IV fluids if needed. | No dose specified in cards; follow standard WHO ORS preparation (not detailed in cards). |\n\n*No other medications (e.g., antibiotics, anti‑emetics) are listed in the cholera cards for this presentation.*\n\n---\n\n**4. ADVICE**  \n\n- **Home‑based fluid replacement** – Provide at least **4 packets of ORS** for use after discharge (CHOL‑ADV‑001 [p.10]). Instruct the patient/caregiver to give **one packet dissolved in 1 L of clean water** and to sip **½ L after each loose stool** or **as often as the patient feels thirsty**.  \n- **When to seek further care** – Return immediately if any of the following develop:  \n  - New danger signs (lethargy, unconsciousness, weak/absent pulse, respiratory distress)  \n  - Inability to drink or keep fluids down  \n  - More than **3 episodes of diarrhoea in 24 h** despite ORS  \n  - Persistent vomiting, severe abdominal pain, or signs of severe dehydration (skin‑pinch very slow, sunken eyes worsening).  \n- **Prevention counseling** – Emphasize safe water, proper hand‑washing, and food hygiene to reduce cholera transmission (CHOL‑ADV‑001 [p.10]).  \n- **Caregiver understanding** – Verify that the caregiver can repeat the key points (how to prepare ORS, warning signs, when to return). Document that understanding was confirmed (missing information to be obtained) (CHOL‑ADV‑001 [p.10]).  \n\n*If the patient’s weight or dehydration severity is later found to be different (e.g., severe dehydration with danger signs), the fluid plan would be upgraded to “Plan C” (IV fluids as above) and the patient should be monitored closely in a health‑facility setting (CHOL‑DX‑001 [p.1]).*",
+  "backend": "groq:openai/gpt-oss-120b",
+  "usage": {
+    "prompt_tokens": 2034,
+    "completion_tokens": 1399,
+    "total_tokens": 3433
+  },
+  "elapsed_s": 4.106
+}

@@ -1,0 +1,22 @@
+{
+  "mode": "Baseline",
+  "case": "Chief complaints: Profuse watery diarrhoea since last night (6 episodes), vomiting twice, very thirsty, feeling weak.\nDuration: 12 hours\nAge: 34; Sex: Male\nHistory: No chronic illness\nMedicines: None\nAllergies: None known\nOther: Sunken eyes, skin pinch goes back slowly, pulse rapid, able to drink eagerly. No blood in stool.\n",
+  "retrieved_cards": [
+    "CHOL-DX-001",
+    "CHOL-MED-003",
+    "CHOL-ADV-001",
+    "DEN-ADV-002",
+    "DEN-DX-001",
+    "CHIK-ADV-002"
+  ],
+  "applicability": null,
+  "questions": null,
+  "output": "**1. PROBABLE DIAGNOSIS**  \n- **Probable cholera** – The patient is ≥ 2 years old and has acute watery diarrhoea with vomiting, marked thirst, sunken eyes, a rapid pulse and a slowly returning skin‑pinch. These findings satisfy the cholera case definition (acute watery diarrhoea) and the dehydration assessment that fits “some dehydration” (Plan B) as described in the cholera diagnostic tool (CARD CHOL‑DX‑001, p.1).\n\n**2. INVESTIGATIONS**  \n- No investigation cards specific to cholera are provided. The available cards do not list any laboratory or point‑of‑care tests required for this presentation.  \n  *Result:* No investigations can be recommended from the retrieved cards.\n\n**3. MEDICATION PLANNING**  \n- **Intravenous Ringer’s lactate** – The cholera medication card (CARD CHOL‑MED‑003, p.3) is only applicable when **severe dehydration or shock** is present **and** the patient’s **age and weight are known**.  \n  - In this case the patient shows signs of *some* dehydration (Plan B) and **weight is not provided** (missing information). Therefore the prerequisites for the IV fluid recommendation are **not met**.  \n  - **Action:** No IV fluid is prescribed at this stage per the cholera medication card.  \n\n- **Oral Rehydration Solution (ORS)** – The same medication card includes “give ORS to replace ongoing losses as soon as safe to drink,” but this instruction is tied to the severe‑dehydration protocol. Because the severe‑dehydration prerequisite is not satisfied, the card does not support a stand‑alone ORS prescription here.  \n  - **Action:** No ORS recommendation can be made from the retrieved medication card alone.\n\n**4. ADVICE**  \n- The cholera discharge‑advice card (CARD CHOL‑ADV‑001, p.10) requires the patient **to be discharged** before its actions (provide ORS packets, teach warning signs, etc.) can be applied. The patient is currently still in the acute phase and not ready for discharge, so this advice cannot be issued at this time.  \n\n- No other advice cards (e.g., dengue or chikungunya) are relevant to the current presentation.  \n\n**Summary of gaps / missing information**  \n- **Weight** – required for any IV fluid dosing (CARD CHOL‑MED‑003).  \n- **Dehydration severity confirmation** – while the signs point to “some dehydration” (Plan B), the medication card explicitly addresses only severe dehydration.  \n\n*Until the patient’s weight is known and/or dehydration progresses to severe, the protocol does not call for specific medication or discharge‑related advice.*",
+  "backend": "groq:openai/gpt-oss-120b",
+  "usage": {
+    "prompt_tokens": 1736,
+    "completion_tokens": 1335,
+    "total_tokens": 3071
+  },
+  "elapsed_s": 3.973
+}

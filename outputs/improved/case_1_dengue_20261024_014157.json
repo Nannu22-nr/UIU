@@ -1,0 +1,76 @@
+{
+  "mode": "Improved",
+  "case": "Chief complaints: High fever for 3 days, severe headache, pain behind the eyes, body ache, nausea, and a rash on the chest.\nDuration: 3 days\nAge: 28; Sex: Male\nHistory: None significant\nMedicines: None\nAllergies: None known\nOther: Temperature 39.5 C. No bleeding. No abdominal pain. Urine output normal.\n",
+  "retrieved_cards": [
+    "DEN-ADV-002",
+    "CHIK-ADV-002",
+    "CHIK-DX-001",
+    "CHIK-DX-002",
+    "DEN-DX-002",
+    "DEN-ADV-001"
+  ],
+  "applicability": [
+    {
+      "card_id": "DEN-ADV-002",
+      "disease": "Dengue",
+      "status": "applicable",
+      "notes": [
+        "prerequisites/exclusions appear satisfied by case text"
+      ]
+    },
+    {
+      "card_id": "CHIK-ADV-002",
+      "disease": "Chikungunya",
+      "status": "applicable_with_gaps",
+      "notes": [
+        "missing: 'vital signs'"
+      ]
+    },
+    {
+      "card_id": "CHIK-DX-001",
+      "disease": "Chikungunya",
+      "status": "applicable_with_gaps",
+      "notes": [
+        "missing: 'laboratory result'"
+      ]
+    },
+    {
+      "card_id": "CHIK-DX-002",
+      "disease": "Chikungunya",
+      "status": "applicable_with_gaps",
+      "notes": [
+        "missing: 'NS1/IgM result'"
+      ]
+    },
+    {
+      "card_id": "DEN-DX-002",
+      "disease": "Dengue",
+      "status": "applicable_with_gaps",
+      "notes": [
+        "missing: 'vital signs'"
+      ]
+    },
+    {
+      "card_id": "DEN-ADV-001",
+      "disease": "Dengue",
+      "status": "applicable",
+      "notes": [
+        "prerequisites/exclusions appear satisfied by case text"
+      ]
+    }
+  ],
+  "questions": [
+    "[CHIK-ADV-002] Please confirm: vital signs",
+    "[CHIK-DX-001] Please confirm: laboratory result",
+    "[CHIK-DX-002] Please confirm: NS1/IgM result",
+    "[DEN-DX-002] Please confirm: vital signs"
+  ],
+  "output": "**1. PROBABLE DIAGNOSIS**  \n- **Probable Dengue Fever (without warning signs)** – The patient has a high fever > 38.5 °C for 3 days, severe headache, retro‑orbital pain, body ache, nausea and a maculopapular rash on the chest, which are classic clinical features of dengue. No bleeding, abdominal pain, altered mental status or other warning signs are reported, satisfying the “dengue without warning signs” condition used for home management (CARD DEN‑ADV‑001)【DEN‑ADV‑001, p.11】.  \n- **Chikungunya fever – less likely** – Although fever and rash are present, the case does not describe the required severe poly‑arthralgia/arthritis that is a prerequisite for suspecting chikungunya (CARD CHIK‑DX‑001)【CHIK‑DX‑001, p.1】. Moreover, the guideline states that patients should be managed as dengue until dengue is excluded (CARD CHIK‑DX‑001)【CHIK‑DX‑001, p.1】.  \n\n**2. INVESTIGATIONS**  \n\n| Test | Purpose (per guideline) | Timing / Conditions |\n|------|------------------------|---------------------|\n| Complete Blood Count (CBC) – platelet count & haematocrit | Detect possible dengue warning sign (thrombocytopenia, rising haematocrit) and monitor disease progression | First CBC on the **beginning of day 3 of fever** and then daily as needed (CARD DEN‑ADV‑001, p.11) |\n| NS1 antigen / IgM serology for dengue | Laboratory confirmation of dengue infection (required for “confirmed” case) | As soon as possible; ideally within the first 5 days of illness (implied by CARD CHIK‑DX‑002)【CHIK‑DX‑002, p.8】 |\n| Dengue RT‑PCR (if available) | Alternative laboratory confirmation | Early in illness (first 5 days) – not explicitly stated but part of dengue diagnostic work‑up |\n| Weight measurement | To calculate appropriate oral fluid volume (2 mL kg⁻¹ h⁻¹ if < 50 kg) (CARD DEN‑ADV‑001)【DEN‑ADV‑001, p.11】 | At presentation |\n| Urine output monitoring (record volume) | Ensure adequate renal perfusion; threshold < 150‑200 mL/4‑6 h if ≥ 50 kg is a warning sign (CARD DEN‑ADV‑002)【DEN‑ADV‑002, p.12】 | Every 3‑4 h; record for 24 h |\n| Vital signs (BP, pulse, respiratory rate, temperature) | Identify any hidden warning signs (e.g., hypotension, tachycardia) and assess need for admission (CARD CHIK‑ADV‑002, CARD DEN‑DX‑002)【CHIK‑ADV‑002, p.9】【DEN‑DX‑002, p.3】 | At presentation and at each follow‑up |\n\n**3. MEDICATION PLANNING**  \n\nThe retrieved protocol cards do **not** specify any drug regimens for dengue or chikungunya. Therefore:\n\n- **Antipyretic / Analgesic** – *Unknown: specific drug, dose, route, frequency, duration* (no medication details are provided in the cards).  \n- **Other medications** – No antiviral or",
+  "backend": "groq:openai/gpt-oss-120b",
+  "usage": {
+    "prompt_tokens": 1921,
+    "completion_tokens": 1400,
+    "total_tokens": 3321
+  },
+  "elapsed_s": 4.059
+}
