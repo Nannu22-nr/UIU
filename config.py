@@ -3,7 +3,10 @@
 # Model, temperature, top-k and prompt template stay fixed in both modes.
 
 import os
+import streamlit as st
 from dotenv import load_dotenv
+
+# লোকাল মেশিনে .env ফাইল লোড করবে
 load_dotenv()
 
 # Retrieval (identical in both modes)
@@ -12,8 +15,18 @@ INDEX_PATH = "index/rag_index.pkl"
 CARDS_PATH = "cards.jsonl"
 
 # Model (identical in both modes)
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
-GROQ_MODEL = os.environ.get("GROQ_MODEL", "llama-3.1-70b-versatile")
+# Streamlit Cloud Secrets অথবা লোকাল .env থেকে API Key নেওয়া
+try:
+    if "GROQ_API_KEY" in st.secrets:
+        GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+        GROQ_MODEL = st.secrets.get("GROQ_MODEL", "openai/gpt-oss-120b")
+    else:
+        raise KeyError
+except Exception:
+    # লোকাল মেশিনের জন্য fallback (.env)
+    GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
+    GROQ_MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
+
 LLM_TEMPERATURE = 0.0
 LLM_MAX_TOKENS = 1400
 
